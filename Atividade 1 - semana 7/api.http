@@ -1,0 +1,42 @@
+###
+
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/api/produtos
+
+###
+
+GET http://localhost:8080/api/produtos/1
+
+###
+
+
+POST http://localhost:8080/api/produtos
+Content-Type: application/json
+
+{
+    "nome": "Boa noite, Coelhinho",
+    "descricao": "Deixe-se envolver pela atmosfera mágica do nosso quadro 'Boa noite, Coelhinho', uma obra de arte digital que captura a essência da série 'Sonhos de um Coelho'. Nessa cena encantadora, nosso amiguinho coelho descansa em sua cama, cercado por objetos que contam um pouco da sua história. Impresso em tela de alta qualidade, este quadro com medidas de 34 x 44 cm é perfeito para decorar quartos, salas e qualquer ambiente que você deseje transformar em um espaço mais aconchegante e inspirador. Uma ótima opção para presentear os amantes de arte digital e para quem busca uma peça única para compor a decoração da sua casa.",
+    "preco": 350.00,
+    "tags": ["tag1"]
+}
+
+
+###
+
+PUT http://localhost:8080/api/produtos/1/upload
+Content-Type: application/json
+
+{
+    "nome": "Boa noite, Coelhinho",
+    "descricao": "Deixe-se envolver pela atmosfera mágica do nosso quadro 'Boa noite, Coelhinho', uma obra de arte digital que captura a essência da série 'Sonhos de um Coelho'. Nessa cena encantadora, nosso amiguinho coelho descansa em sua cama, cercado por objetos que contam um pouco da sua história. Impresso em tela de alta qualidade, este quadro com medidas de 34 x 44 cm é perfeito para decorar quartos, salas e qualquer ambiente que você deseje transformar em um espaço mais aconchegante e inspirador. Uma ótima opção para presentear os amantes de arte digital e para quem busca uma peça única para compor a decoração da sua casa.",
+    "preco": 350.00
+}
+
+###
+
+DELETE http://localhost:8080/api/produtos/10
+
+
