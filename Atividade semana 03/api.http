@@ -1,0 +1,33 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/produtos
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Chaveiro de Supernatural",
+    "descricao": "Chaveiro da serie Supernatural",
+    "preco": 20
+}
+
+###
+
+PUT http://localhost:8080/produtos/add4c2f4-0d1b-4373-ac7f-e391bc2a6c72
+Content-Type: application/json
+
+{
+    "nome": "Colar do Dean Winchester",
+    "descricao": "Amuleto do personagem Dean de Supernatural",
+    "preco": 50
+}
+
+
+
+###
+
+DELETE http://localhost:8080/produtos/add4c2f4-0d1b-4373-ac7f-e391bc2a6c72
